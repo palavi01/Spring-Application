@@ -20,6 +20,7 @@ public class LoginController
 	@RequestMapping(value="/logindummylink",method = RequestMethod.GET)
 	public ModelAndView logindummylink()
 	{
+		System.out.println("Test");
 		System.out.println("Dummy Login Controller");
 		return new ModelAndView("login","loginForm",new LoginForm());
 	}
